@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: iran sans;
+    src: url(fonts/A-Iranian-Sans/A-Iranian-Sans/Iranian\ Sans.ttf);
+}
+
+*{
+    direction: rtl;
+    font-family: iran sans;
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(221, 221, 221);
+}
+
+.master{
+    width: 100%;
+    max-width: 2700px;
+    min-height: 1800px;
+    margin: 0% auto;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+header{
+    width: 100%;
+
+}
+
+
+header>nav{
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    display: flex;
+}
+
+header>nav a{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 7.5%;
+    height: 100%;
+    margin-right: 1%;
+
+}
+
+header>nav img{
+    width: 100%;
+    height: 50%;
+
+}
+
+
+
+.right-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+}
+
+.right-side>a:first-child>img{
+    height: 100%;
+}
+
+
+.left-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.left-side>a:first-child{
+    width: 17%;
+    height: 75%;
+    border: 0.1vw solid black;
+    border-radius: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left-side>a:first-child>img{
+    width: 20%;
+    margin-left: 5%;
+    transform: rotate(180deg);
+}
+
+
+
+@media screen and (max-width: 400px) {
+    header>nav{
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    display: flex;
+}
+
+
+header>nav a{
+    font-size: 0.6rem;
+    width: 30%;
+    height: 100%;
+    margin-right: 1%;
+}
+
+
+header>nav img{
+    width: 100%;
+    height: 50%;
+}
+
+.right-side{
+    width: 30%;
+    border: 1px solid red;
+
+}
+
+
+.right-side>a{
+    width: 70%;
+    height: 100%;
+}
+
+.left-side{
+    width: 70%;
+    border: 1px solid red;
+    
+}
+
+.left-side>a:first-child{
+    width: 60%;
+}
+
+.right-side>a:not(.right-side>a:first-child){
+    display: none;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header>nav{
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+        display: flex;
+    }
+    
+    
+    header>nav a{
+        font-size: 0.6rem;
+        width: 30%;
+        height: 100%;
+        margin-right: 1%;
+    }
+    
+    
+    header>nav img{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .left-side>a:first-child{
+        width: 40%;
+    }
+
+    
+    }
+

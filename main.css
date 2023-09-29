@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+*{
+    direction: rtl;
+
+}
+
+
+
+.slider-cover{
+    margin: 10px 1% 10px 1%;
+    border-radius: 10px;
+    min-width: 98%;
+    position: relative;
+    top: 0%;
+    box-shadow: 5px 5px 5px gray;
+ 
+    
+    
+}
+
+.slider{
+    min-width: 100%;
+    display: flex;
+    aspect-ratio: 8/2.5;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+
+   
+}
+
+.slider>img{
+    flex: 1 0 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+    border-radius: 10px;
+
+
+}
+
+.slider-cover>nav{
+    position: absolute;
+    right: 42.5%;
+    left: 42.5%;
+    top: 94%;
+    width: 15%;
+    height: 5.5%;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+ 
+}
+
+.slider-cover>nav>a{
+    background-color: rgb(172, 172, 172);
+    border: 2px solid rgb(104, 104, 104);
+    width: 7.5%;
+    height: 60%;
+    margin: 0% 1%;
+    border-radius: 100%;
+}
+
+
+@media screen and (max-width: 400px) {
+ 
+.slider-cover{
+        margin: 10px 0% 10px 0%;
+        border-radius: 0px;
+        min-width: 98%;
+        position: relative;
+        top: 0%;
+        box-shadow: 5px 5px 5px gray;   
+    }
+
+.slider{
+    aspect-ratio: 16/16;
+    border-radius: 0px;
+}
+
+
+.slider>img{
+    border-radius: 0px;
+
+
+}
+
+.slider-cover>nav{
+    right: 25%;
+    left: 25%;
+    width: 50%;
+    height: 10%;
+    top: 90%;
+ 
+}
+
+
+.slider-cover>nav>a{
+    width: 15%;
+    height: 80%;
+    margin: 0% 1%;
+    border-radius: 100%;
+
+}
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+.slider-cover{
+        margin: 10px 1% 10px 1%;
+        border-radius: 10px;
+        min-width: 98%;
+        position: relative;
+        top: 0%;
+        box-shadow: 5px 5px 5px gray;   
+    }
+
+.slider{
+    aspect-ratio: 8/2.5;
+    border-radius: 10px;
+}
+
+
+.slider>img{
+    border-radius: 10px;
+
+
+}
+
+.slider-cover>nav{
+    right: 25%;
+    left: 25%;
+    width: 50%;
+    height: 10%;
+    top: 86%;
+ 
+}
+
+
+.slider-cover>nav>a{
+    width: 7%;
+    height: 100%;
+    margin: 0% 1%;
+    border-radius: 100%;
+
+}
+
+    
+
+}
